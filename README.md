@@ -29,7 +29,7 @@ cache.set(
     ]
 );
 
-customer = cache.get('id', 'your-id-2');
+customer = cache.get('id', 'your-id-1');
 
 /**
 
