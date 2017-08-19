@@ -11,7 +11,7 @@ $ npm install simple-stash --save
 
 ## Usage
 ```javascript
-var cache = require('./lib/simple-stash');
+var cache = require('simple-stash');
 
 var data = [
     {
