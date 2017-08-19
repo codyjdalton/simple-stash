@@ -1,0 +1,19 @@
+{
+  "name": "simple-stash",
+  "version": "0.0.1",
+  "description": "Simple local caching and lookup",
+  "main": "lib/simple-stash.js",
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "scripts": {},
+  "keywords": [],
+  "author": "Cody Dalton <codyjdalton@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/codyjdalton/js-data-cache"
+  },
+  "devDependencies": {},
+  "dependencies": {}
+}
