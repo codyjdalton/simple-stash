@@ -1,4 +1,4 @@
-var cache = require('./lib/js-data-cache.js');
+var cache = require('./lib/simple-stash');
 
 var data = [
     {
