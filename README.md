@@ -1,42 +1,39 @@
 # Data Cache
 
-Simple local caching for Javascript
+Simple local caching for Javascript.
 
 ## Installation
 ```{r, engine='shell'}
 $ npm install simple-stash --save
 ```
 
+[View on NPM](https://www.npmjs.com/package/simple-stash)
+
 ## Usage
 ```javascript
-var cache = require('simple-stash');
+var cache = require('./lib/simple-stash');
 
-var customer;
+var data = [
+    {
+        id: 'test-uuid-1',
+        name: 'John Smith'
+    },
+    {
+        id: 'test-uuid-2',
+        name: 'George Miller'
+    }
+];
 
-cache.set(
-    [
-        {
-            id: 'your-id-1',
-            name: 'John Smith'
-        },
-        {
-            id: 'your-id-2',
-            name: 'George Miller'
-        }
-    ],
-    [ 
-        'id'
-    ]
-);
+cache.set(data, [ 'id' ]);
 
-customer = cache.get('id', 'your-id-1');
+var customer = cache.get('id', 'test-uuid-1');
 
+console.log(customer);
 /**
 
 Logs:
 
-{ id: 'your-id-1', name: 'John Smith' }
+{ id: 'test-uuid-1', name: 'John Smith' }
 
 **/
-console.log(customer);
 ```
