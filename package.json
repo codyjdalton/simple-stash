@@ -1,6 +1,6 @@
 {
   "name": "simple-stash",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Simple local caching and lookup",
   "main": "lib/simple-stash.js",
   "engines": {
