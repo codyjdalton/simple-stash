@@ -6,14 +6,46 @@
   "engines": {
     "node": ">=4.0.0"
   },
-  "scripts": {},
+  "scripts": {
+    "test": "nyc mocha"
+  },
   "keywords": [],
-  "author": "Cody Dalton <codyjdalton@gmail.com>",
+  "author": "Cody Dalton <codydevbox@gmail.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/codyjdalton/simple-stash"
   },
-  "devDependencies": {},
+  "nyc": {
+    "include": [
+      "**/*.js"
+    ],
+    "exclude": [
+      "**/*.spec.js",
+      "./node_modules"
+    ],
+    "extension": [
+      ".js"
+    ],
+    "reporter": [
+      "text-summary",
+      "html",
+      "lcov"
+    ],
+    "check-coverage": true,
+    "per-file": true,
+    "lines": 100,
+    "statements": 100,
+    "functions": 100,
+    "branches": 100,
+    "sourceMap": true,
+    "instrument": true
+  },
+  "devDependencies": {
+    "chai": "*",
+    "coveralls": "*",
+    "mocha": "*",
+    "nyc": "*"
+  },
   "dependencies": {}
 }

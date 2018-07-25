@@ -1,4 +1,4 @@
-# Data Cache
+# Simple Stash
 
 Simple local caching for Javascript.
 
@@ -29,11 +29,4 @@ cache.set(data, [ 'id' ]);
 var customer = cache.get('id', 'test-uuid-1');
 
 console.log(customer);
-/**
-
-Logs:
-
-{ id: 'test-uuid-1', name: 'John Smith' }
-
-**/
 ```
