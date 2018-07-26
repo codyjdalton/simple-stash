@@ -1,3 +1,2 @@
 --full-trace
---bail
 ./lib/**/*.spec.js
