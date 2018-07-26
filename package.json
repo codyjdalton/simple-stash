@@ -1,6 +1,6 @@
 {
   "name": "simple-stash",
-  "version": "0.0.6",
+  "version": "1.0.0",
   "description": "Simple local caching and lookup",
   "main": "lib/simple-stash.js",
   "engines": {
@@ -47,5 +47,7 @@
     "mocha": "*",
     "nyc": "*"
   },
-  "dependencies": {}
+  "dependencies": {
+    "uuid": "^3.3.2"
+  }
 }
