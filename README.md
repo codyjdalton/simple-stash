@@ -85,6 +85,14 @@ Logs:
 ]
 ```
 
+### Clear the cache
+
+You can also remove all items from storage.
+
+```javascript
+cache.clear();
+```
+
 ## Versioning
 
 We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/codyjdalton/simple-stash/tags).
